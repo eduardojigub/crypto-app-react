@@ -14,7 +14,7 @@ const Coins = (props) => {
           <p className='hide-mobile'>Mkt Cap</p>
         </div>
         {props.coins.map((coins) => (
-          <CoinItem coins={coins} />
+          <CoinItem coins={coins} key={coins.id} />
         ))}
       </div>
     </div>
