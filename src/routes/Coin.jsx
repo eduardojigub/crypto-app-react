@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './Coin.css';
+import DOMPurify from 'dompurify';
 
 const Coin = () => {
   const params = useParams();
